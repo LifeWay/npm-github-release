@@ -1,4 +1,4 @@
-# @lifewayit/npm-github-release [![NPM Package](https://img.shields.io/npm/v/npm-github-release.svg)](https://www.npmjs.com/package/@lifewayit/npm-github-release)
+# lifeway-npm-github-release 
 
 Automate the full release process for npm packages.
 
@@ -12,7 +12,7 @@ npm-github-release automates these steps in a simple way.  Simply run `npm run r
 
 1. Install npm-github-release
 ```
-npm i --save-dev @lifewayit/npm-github-release
+npm i --save-dev lifeway/npm-github-release
 ```
 
 2. Add a new `release` script to your `package.json` file

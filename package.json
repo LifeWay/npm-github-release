@@ -1,5 +1,5 @@
 {
-    "name": "@lifewayit/npm-github-release",
+    "name": "lifeway-npm-github-release",
     "version": "1.0.0",
     "description": "Automates the full release process for npm packages",
     "contributors": [
@@ -19,7 +19,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/lifewayit/npm-github-release.git"
+        "url": "git+https://github.com/lifeway/npm-github-release.git"
     },
     "keywords": [
         "release",
@@ -31,9 +31,9 @@
         "release"
     ],
     "bugs": {
-        "url": "https://github.com/lifewayit/npm-github-release/issues"
+        "url": "https://github.com/lifeway/npm-github-release/issues"
     },
-    "homepage": "https://github.com/lifewayit/npm-github-release#readme",
+    "homepage": "https://github.com/lifeway/npm-github-release#readme",
     "dependencies": {
         "bluebird": "^3.4.1",
         "inquirer": "^1.1.2",
