@@ -1,8 +1,17 @@
 {
-    "name": "npm-github-release",
-    "version": "0.7.5",
+    "name": "@lifewayit/npm-github-release",
+    "version": "1.0.0",
     "description": "Automates the full release process for npm packages",
-    "author": "Brady Holt",
+    "contributors": {
+      { "name" : "Kevin Old",
+				"email" : "kevin.old@lifeway.com",
+				"url" : "https://www.lifeway.com"
+			},
+      { "name" : "Brady Holt",
+				"email" : "",
+				"url" : "https://github.com/bradyholt/npm-github-release.git"
+			}
+    },
     "license": "MIT",
     "main": "index.js",
     "bin": {
@@ -10,7 +19,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/bradyholt/npm-github-release.git"
+        "url": "git+https://github.com/lifewayit/npm-github-release.git"
     },
     "keywords": [
         "release",
@@ -22,9 +31,9 @@
         "release"
     ],
     "bugs": {
-        "url": "https://github.com/bradyholt/npm-github-release/issues"
+        "url": "https://github.com/lifewayit/npm-github-release/issues"
     },
-    "homepage": "https://github.com/bradyholt/npm-github-release#readme",
+    "homepage": "https://github.com/lifewayit/npm-github-release#readme",
     "dependencies": {
         "bluebird": "^3.4.1",
         "inquirer": "^1.1.2",

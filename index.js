@@ -135,11 +135,12 @@ function createGitHubRelease(repoName, releaseTagName, releaseNotes, token) {
             body: releaseNotes,
             draft: false
         }, (error, data) => {
-            if (!error) {
-                resolve(data);
-            } else {
-                reject("GitHub API: " + error.message);
-            }
+            // Ignore error from Github Enterprise
+            resolve(data);
+            //if (!error) {
+            //} else {
+            //    reject("GitHub API: " + error.message);
+            //}
         });
     })
 }
@@ -175,18 +176,20 @@ function run() {
         })
         .then((tagName) => {
             releaseTagName = tagName;
-            let repoName = packageInfo.repository.url.match(/.com\/(\w+\/\w+)/)[1];
+            let repoName = packageInfo.repository.url.match(/.org\/(\w+\/\w+)/)[1];
             return createGitHubRelease(repoName, releaseTagName, releaseNotes, ghToken);
         })
         .then((output) => {
-            console.log("\x1b[1m\x1b[32m%s\x1b[0m", `${releaseTagName} released to GitHub - ${output.html_url}`);
-            return npmPublish(releaseTagName);
+            console.log("\x1b[1m\x1b[32m%s\x1b[0m", `${releaseTagName} released to GitHub`);
+            process.exit(0);
         })
+        /*
+         * Do not publish to npm, only a Github release
         .then(() => {
             let npmUrl = `https://www.npmjs.com/package/` + packageInfo.name;
             console.log("\x1b[1m\x1b[32m%s\x1b[0m", `${releaseTagName} released to npm - ${npmUrl}`);
             process.exit(0);
-        })
+        })*/
         .catch((errorMessage) => {
             console.log("\x1b[31mERROR: %s\x1b[0m", errorMessage);
             process.exit(1);
