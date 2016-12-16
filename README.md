@@ -28,3 +28,7 @@ npm i --save-dev @lifewayit/npm-github-release
 ## Settings
 
 A [GitHub Personal access token](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) will be needed to create the release on GitHub.  Adding this token to an environment variable named `GITHUB_API_TOKEN` is recommended as this will allow npm-github-release to skip prompting for it.
+
+## Credits
+
+Thanks to [Brady Holt](https://github.com/bradyholt) for his intitial module, [npm-github-release](https://github.com/bradyholt/npm-github-release).  This version does not publish to npm and serves as a fork-and-customized repo for LifeWay.
