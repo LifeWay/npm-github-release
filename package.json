@@ -3,7 +3,7 @@
     "private": "false",
     "version": "1.0.0",
     "description": "Automates the full release process for npm packages",
-    "contributors": {
+    "contributors": [
       { "name" : "Kevin Old",
 				"email" : "kevin.old@lifeway.com",
 				"url" : "https://www.lifeway.com"
@@ -12,7 +12,7 @@
 				"email" : "",
 				"url" : "https://github.com/bradyholt/npm-github-release.git"
 			}
-    },
+    ],
     "license": "MIT",
     "main": "index.js",
     "bin": {
