@@ -1,5 +1,6 @@
 {
     "name": "@lifewayit/npm-github-release",
+    "private": "false",
     "version": "1.0.0",
     "description": "Automates the full release process for npm packages",
     "contributors": {
