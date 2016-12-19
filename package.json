@@ -1,16 +1,18 @@
 {
     "name": "lifeway-npm-github-release",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Automates the full release process for npm packages",
     "contributors": [
-      { "name" : "Kevin Old",
-				"email" : "kevin.old@lifeway.com",
-				"url" : "https://www.lifeway.com"
-			},
-      { "name" : "Brady Holt",
-				"email" : "",
-				"url" : "https://github.com/bradyholt/npm-github-release.git"
-			}
+        {
+            "name": "Kevin Old",
+            "email": "kevin.old@lifeway.com",
+            "url": "https://www.lifeway.com"
+        },
+        {
+            "name": "Brady Holt",
+            "email": "",
+            "url": "https://github.com/bradyholt/npm-github-release.git"
+        }
     ],
     "license": "MIT",
     "main": "index.js",
